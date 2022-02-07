@@ -1,10 +1,12 @@
-export default { title: 'Button' };
+import button from "./button.twig";
+import "./button.scss";
 
-import button from './button.twig';
-import './button.scss';
+export default {
+  title: "Atom/Button",
+  args: {
+    text: "This is a button",
+    href: "#" 
+  },
+};
 
-export const default_button = () => (
-    button({
-        text: "Im a button"
-    })
-);
+export const default_button = button.bind({});

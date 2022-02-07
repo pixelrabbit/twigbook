@@ -1,12 +1,14 @@
-export default { title: 'Card' };
+import card from "./card.twig";
+import "./card.scss";
 
-import card from './card.twig';
-import './card.scss';
-
-export const default_card = () => (
-    card({
+export default { 
+    title: "Molecule/Card",
+    args: {
         heading: "Card heading",
-        content: "<p>This is HTML content.</p>",
-        buttons: [{}]
-    })
-);
+        content: "<p>This is HTML content here.</p>",
+        buttons: [{}],
+      }
+};
+
+export const default_card = card.bind({});
+// default_card.args = {};

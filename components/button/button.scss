@@ -1,3 +1,8 @@
-button {
-    color: red;
+.pr-button {
+    background-color: var(--color-main);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    vertical-align: middle;
 }

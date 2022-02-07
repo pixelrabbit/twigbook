@@ -1,5 +1,5 @@
 {
-  "name": "twigbook",
+  "name": "@pixelrabbit/twigbook",
   "version": "1.0.0",
   "description": "Example of a design system using twig in storybook",
   "main": "index.js",
@@ -22,5 +22,14 @@
     "twig": "^1.15.4",
     "twig-drupal-filters": "^3.1.2",
     "twig-loader": "^0.5.5"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelrabbit/twigbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pixelrabbit/twigbook/issues"
+  },
+  "homepage": "https://github.com/pixelrabbit/twigbook#readme"
 }

@@ -1,0 +1,46 @@
+.pr-header {
+    --header-bg: var(--powder-blue);
+    --header-logo: var(--honeydew);
+
+    padding: 1rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px dashed var(--powder-blue);
+    }
+}
+.pr-logo {
+    font-size: 2.5rem;
+    color: var(--prussian-blue);
+    // text-shadow: 3px 3px var(--honeydew);
+    font-weight: 900;
+    font-style: italic;
+}
+.pr-nav {
+    display: flex;
+    column-gap: 1rem;
+    a {
+        font-weight: 700;
+        color: var(--prussian-blue);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 2px dashed transparent;
+        transition: border-color 0.4s ease-in-out;
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: var(--powder-blue);
+        }
+    }
+}
+
+.pr-hero {
+    .accent {
+        font-size: 900;
+        font-style: italic;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}

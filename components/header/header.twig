@@ -1,0 +1,28 @@
+<div class="pr-header">
+    <div class="container">
+        <div class="pr-logo">
+            {{ logotext }}
+        </div>
+        <nav class="pr-nav">
+            {% for item in nav %}
+                <a href="#">
+                    {{ item.text }}
+                </a>
+            {% endfor %}
+        </nav>
+    </div>
+</div>
+<div class="pr-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col--half">
+                <h1>
+                    Actually, my name is <span class="accent">Dan</span>.
+                </h1>
+                <p>
+                    I am a <strong>front-end developer</strong> from <strong>Austin, Texas</strong>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

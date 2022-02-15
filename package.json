@@ -23,9 +23,8 @@
     "style-loader": "2.0.0",
     "twig": "^1.15.4",
     "twig-drupal-filters": "^3.1.2",
-    "twig-loader": "^0.5.5"
+    "twigjs-loader": "^1.0.2"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pixelrabbit/twigbook.git"

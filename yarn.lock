@@ -8006,6 +8006,11 @@ twig@^1.12.0, twig@^1.15.1, twig@^1.15.4:
     minimatch "3.0.x"
     walk "2.3.x"
 
+twigjs-loader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/twigjs-loader/-/twigjs-loader-1.0.2.tgz#93d77df87aabdd6babc8ed7c010b9c75141ab895"
+  integrity sha512-or0IXv0yiDjVB+qfK5k16tvmu+gdWCOl5AXZ8p1Lhuo+rUnz+XBvvQRtqXfI8TUh2qvst9qiIfgLyqNyPO8vrQ==
+
 type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"

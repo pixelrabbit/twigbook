@@ -7,7 +7,7 @@ module.exports = ({ config }) => {
     test: /\.twig$/,
     use: [
       {
-        loader: "twig-loader",
+        loader: "twigjs-loader",
       },
     ],
   });

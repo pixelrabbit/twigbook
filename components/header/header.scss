@@ -35,12 +35,22 @@
     }
 }
 
-.pr-hero {
+.hero {
     .accent {
         font-size: 900;
         font-style: italic;
     }
     p {
         font-size: 1.5rem;
+    }
+    #back {
+        path {
+            fill: var(--imperial-red);
+        }
+    }
+    #front {
+        path {
+            fill: var(--powder-blue);
+        }
     }
 }

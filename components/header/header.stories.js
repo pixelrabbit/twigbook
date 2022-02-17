@@ -9,14 +9,14 @@ export default {
     args: {
         logotext: "Pixel<span class='accent'>Rabbit</span>",
         nav: [{
+          text: "Work",
+          href: "#work"
+        },{
           text: "About",
           href: "#about"
         },{
-          text: "Tools",
-          href: "#tools"
-        },{
-          text: "Methods",
-          href: "#methods"
+          text: "Stuff",
+          href: "#stuff"
         }]
       }
 };

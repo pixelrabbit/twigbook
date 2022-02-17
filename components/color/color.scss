@@ -3,12 +3,14 @@
 
 /* CSS HSL */
 --imperial-red: hsla(355, 78%, 56%, 1);
+--imperial-red-half: hsla(355, 78%, 56%, .33);
 --honeydew: hsla(105, 55%, 96%, 1);
 --powder-blue: hsla(182, 43%, 76%, 1);
 --celadon-blue: hsla(203, 39%, 44%, 1);
 --prussian-blue: hsla(215, 50%, 23%, 1);
 
-
+--dots: 2px dashed var(--powder-blue);
+--section-padding-y: 4rem;
 }
 
 body {

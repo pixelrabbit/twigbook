@@ -1,6 +1,6 @@
 {
   "name": "@pixelrabbit/twigbook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Example of a design system using twig in storybook",
   "main": "index.js",
   "scripts": {

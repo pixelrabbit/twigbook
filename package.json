@@ -1,42 +1,34 @@
 {
-  "name": "@pixelrabbit/twigbook",
-  "version": "1.0.4",
-  "description": "Example of a design system using twig in storybook",
+  "name": "dte-storybook",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\"",
-    "storybook": "start-storybook -p 5150"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "start": "npm run storybook"
   },
-  "bin": {
-    "setup": "./setup.js"
-  },
-  "author": "Dan Govea - Pixelrabbit",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@storybook/addon-a11y": "^6.4.19",
-    "@storybook/addon-controls": "^6.4.19",
-    "@storybook/html": "^6.4.19",
-    "@storybook/preset-scss": "^1.0.3",
-    "babel-loader": "^8.2.3",
-    "css-loader": "5.2.6",
-    "drupal-attribute": "^1.0.2",
-    "sass": "^1.49.7",
-    "sass-loader": "10.1.1",
-    "style-loader": "2.0.0",
-    "twig": "^1.15.4",
-    "twig-drupal-filters": "^3.1.2",
-    "twigjs-loader": "^1.0.2"
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/html": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "drupal-twig-extensions": "1.0.0-alpha.6",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "twing": "^5.1.0",
+    "twing-loader": "^4.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pixelrabbit/twigbook.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pixelrabbit/twigbook/issues"
-  },
-  "homepage": "https://github.com/pixelrabbit/twigbook#readme",
   "dependencies": {
-    "fs-extra": "^10.0.1"
+    "drupal-attribute": "^1.0.2",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/html": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "drupal-twig-extensions": "1.0.0-alpha.6",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "twing": "^5.1.0",
+    "twing-loader": "^4.0.0"
   }
 }

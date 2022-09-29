@@ -1,0 +1,7 @@
+<div{{ attributes.addClass(['foo', 'bar']) }} id="{{ 'test'|clean_id }}">It's working.</div>
+
+{% include "./test.twig" %}
+
+
+{% set filename = "test" %}
+{% include "/#{filename}.twig" %}

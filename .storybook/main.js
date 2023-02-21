@@ -10,6 +10,7 @@ module.exports = {
   addons: [
     '@storybook/addon-controls',
   ],
+  staticDirs: ['../static'],
 
   webpackFinal: async config => {
     config.experiments = {

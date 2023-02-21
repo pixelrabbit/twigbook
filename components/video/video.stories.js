@@ -7,10 +7,10 @@ import scripts from "./video.js";
 export default {
   title: "Video with wrapper",
   argTypes: {
-    backgroundColor: { control: "color" },
+    media_src: { control: "text" },
   },
   args: {
-    test: "test works"
+    media_src: "https://www.w3schools.com/html/mov_bbb.mp4"
   }
 };
 

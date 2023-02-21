@@ -13,19 +13,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-controls": "^6.5.16",
     "@storybook/builder-webpack5": "^6.4.9",
     "@storybook/html": "^6.4.9",
     "@storybook/manager-webpack5": "^6.4.9",
     "drupal-twig-extensions": "1.0.0-alpha.6",
     "node-polyfill-webpack-plugin": "^1.1.4",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
     "twing": "^5.1.0",
-    "twing-loader": "^4.0.0"
+    "twing-loader": "^4.0.0",
+    "webpack": "^5.75.0"
   },
   "dependencies": {
-    "drupal-attribute": "^1.0.2",
     "@storybook/builder-webpack5": "^6.4.9",
     "@storybook/html": "^6.4.9",
     "@storybook/manager-webpack5": "^6.4.9",
+    "drupal-attribute": "^1.0.2",
     "drupal-twig-extensions": "1.0.0-alpha.6",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "twing": "^5.1.0",

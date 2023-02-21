@@ -7,6 +7,9 @@ module.exports = {
   },
 
   stories: ['../components/**/*.stories.js'],
+  addons: [
+    '@storybook/addon-controls',
+  ],
 
   webpackFinal: async config => {
     config.experiments = {
@@ -31,7 +34,15 @@ module.exports = {
         },
       ],
       include: path.resolve(__dirname, '..', 'components'),
-    });
+    },
+    {
+      test: /\.scss$/i,
+      use: [
+        "style-loader",
+        "css-loader",
+        "sass-loader",
+      ],
+    },);
 
     return config;
   },

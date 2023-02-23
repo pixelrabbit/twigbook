@@ -8,6 +8,8 @@ const rabbitPlayer = {
       const btnPlay = player.querySelector(".play");
       const btnStop = player.querySelector(".stop");
       const progress = player.querySelector(".player__progress");
+      const btnFullscreen = player.querySelector(".player__fullscreen");
+      const btnPip = player.querySelector(".player__pip");
       let playTriggered = false;
 
       // interval for tracking video progress
@@ -75,6 +77,32 @@ const rabbitPlayer = {
         progress.value = (video.currentTime / video.duration) * 100;
         timeCurrent.innerText = new Date( Math.round(video.currentTime) * 1000).toISOString().slice(14, 19);
       }
+
+      // full screen
+      btnFullscreen.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+          player.requestFullscreen();
+        } else {
+          document.exitFullscreen();
+        }
+      })
+      player.addEventListener("fullscreenchange", function(event) {
+        if (document.fullscreenElement) {
+          btnFullscreen.checked = true;
+        } else {
+          btnFullscreen.checked = false;
+        }
+      });
+
+      // picture in picture
+      btnPip.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+          player.classList.add("pip")
+        } else {
+          player.classList.remove("pip")
+        }
+      })
+
     });
   },
   play: function () {},

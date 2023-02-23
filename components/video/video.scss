@@ -1,6 +1,15 @@
 .player {
+    --color-scrubber: lightgreen;
+    --color-track-viewed: darkgreen;
+
     position: relative;
     max-width: 800px;
+    &.pip {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        width: 33vw;
+    }
 }
 .player__video {
     display: block;
@@ -50,10 +59,9 @@ input[type=range]::-webkit-slider-thumb {
     border: none;
     height: 16px;
     width: 16px;
-    background: #037dae;
     margin: -4px 0 0 0;
     // left of thumb
-    box-shadow: -2000px 0 0 2000px darkred, inset 0 0 0 40px red;
+    box-shadow: -2000px 0 0 2000px var(--color-track-viewed), inset 0 0 0 40px var(--color-scrubber);
 }
 
 input[type=range]:focus {

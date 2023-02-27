@@ -1,0 +1,21 @@
+.button {
+    border: 1px solid transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    padding: var(--space-xs) var(--space-sm);
+    text-decoration: none;
+    // clip-path: polygon(0% 0%, calc(100% - var(--space-xs)) 0%, 100% calc(0% + var(--space-xs)), 100% 100%, 0% 100%);
+}
+
+.button--secondary {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+.button--tertiary {
+    border-color: var(--color-tertiary);
+    color: var(--color-tertiary);
+}
+.button--quarternary {
+    border-color: var(--color-quarternary);
+    color: var(--color-quarternary);
+}

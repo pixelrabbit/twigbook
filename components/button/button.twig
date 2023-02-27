@@ -1,0 +1,7 @@
+{% set button_href = button_href|default(false) %}
+{% set button_text = button_text|default("Button") %}
+{% set button_variant = button_variant|default("primary") %}
+
+{% if button_href %}
+    <a href="{{button_href}}" class="button button--{{button_variant}}">{{button_text}}</a>
+{% endif %}

@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #2B3467;
+    --color-secondary: #BAD7E9;
+    --color-tertiary: #FCFFE7;
+    --color-quarternary: #EB455F;
+
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}

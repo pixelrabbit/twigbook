@@ -6,3 +6,5 @@ export const loaders = [
     }
   },
 ];
+
+import '../components/global.scss';

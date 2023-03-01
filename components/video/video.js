@@ -1,6 +1,5 @@
 const rabbitPlayer = {
   init: function (selector) {
-    console.log("player.init");
     document.body.querySelectorAll(selector).forEach(function (player) {
       const video = player.querySelector(".player__video");
       const timeCurrent = player.querySelector(".player__controls__time__current");
@@ -11,6 +10,8 @@ const rabbitPlayer = {
       const btnFullscreen = player.querySelector(".player__fullscreen");
       const btnPip = player.querySelector(".player__pip");
       let playTriggered = false;
+
+      rabbitPlayer.cues(video);
 
       // interval for tracking video progress
       let playingInterval;
@@ -106,6 +107,11 @@ const rabbitPlayer = {
     });
   },
   play: function () {},
+  cues: function(video){
+    const track = video.getElementsByTagName('track')[0].track;
+    console.log(track)
+    // track.activeCues[0].line = -4;
+  }
 };
 
 window.addEventListener(

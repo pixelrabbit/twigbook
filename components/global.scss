@@ -1,4 +1,5 @@
 :root {
+    //https://colorhunt.co/palette/2b3467bad7e9fcffe7eb455f
     --color-primary: #2B3467;
     --color-secondary: #BAD7E9;
     --color-tertiary: #FCFFE7;
@@ -7,10 +8,38 @@
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 40px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 body {
     margin: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: var(--space-sm);
+    line-height: 1.5;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+.palette--primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.palette--secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+.palette--tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    border-top: 0.25rem solid var(--color-primary);
+    // h3 {
+    //     background-color: darken(var(--color-tertiary),50%);
+    // }
+}
+.palette--quarternary {
+    background-color: var(--color-quarternary);
+    color: var(--color-tertiary);
 }

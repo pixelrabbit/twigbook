@@ -1,7 +1,18 @@
-.player {
-    --color-scrubber: lightgreen;
-    --color-track-viewed: darkgreen;
 
+
+.player {
+    --spacer-xs: 8px;
+    --spacer-sm: 12px;
+    --spacer-md: 16px;
+    --spacer-lg: 24px;
+    --spacer-xl: 32px;
+
+    --color-scrubber: lightgreen;
+    --color-track-viewed: 0,100,0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     position: relative;
     max-width: 800px;
     &.pip {
@@ -9,6 +20,23 @@
         right: 16px;
         bottom: 16px;
         width: 33vw;
+    }
+
+    button {
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        padding: var(--spacer-xs);
+        border: none;
+        background-color: transparent;
+        &:hover, &:focus, &:active {
+            background-color: rgba(var(--color-track-viewed), 0.33);
+        }
+    }
+    svg {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 }
 .player__video {
@@ -21,19 +49,37 @@
     right: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
     background-color: rgba(0,0,0,0.66);
     color: #fff;
+    > * {
+        flex: 0 0 auto;;
+    }
 }
-.player__controls__group {
+.player__controls__time {
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
-    column-gap: 8px;
-    padding: 8px;
+    padding: 0 var(--spacer-md);
 }
 .player__progress {
     flex: 0 0 100%;
-    margin-bottom: 8px;
+    margin: 0;
+}
+
+.player {
+    .play .icon--pause {
+        display: none;
+    }
+    &.playing {
+        .play .icon--pause {
+            display: inline;
+        }
+        .play .icon--play {
+            display: none;
+        }
+    }
 }
 
 
@@ -43,12 +89,12 @@ input[type=range]{
     cursor: pointer;
     background: rgba(255,255,255,0.5);
     border: none;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    height: 8px;
+    height: var(--spacer-sm);
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -61,7 +107,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 16px;
     margin: -4px 0 0 0;
     // left of thumb
-    box-shadow: -2000px 0 0 2000px var(--color-track-viewed), inset 0 0 0 40px var(--color-scrubber);
+    box-shadow: -2000px 0 0 2000px rgb(var(--color-track-viewed)), inset 0 0 0 40px var(--color-scrubber);
 }
 
 input[type=range]:focus {

@@ -67,7 +67,7 @@
     padding: 0 var(--spacer-md);
     input {width: 100%;}
 }
-.player__progress {
+.player__progress, progress {
     flex: 0 0 100%;
     margin: 0;
 }

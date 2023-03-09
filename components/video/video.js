@@ -21,6 +21,7 @@ class RabbitVideo {
 		// controls
 		const controls = `
     <div class="player__controls">
+	
       <input type="range" class="player__progress" min="0" max="100" step="any" value="0" />
 
         <button class="player__play" aria-label="Play/pause">
@@ -77,6 +78,14 @@ class RabbitVideo {
 		this.btnFullscreen = this.player.querySelector(".player__fullscreen");
 		// const btnPip = this.player.querySelector(".player__pip");
 		this.volume = this.player.querySelector(".player__volume__range");
+
+		this.video.addEventListener('click',()=>{
+			if (this.video.paused) {
+				this.play();
+			} else {
+				this.pause();
+			}
+		})
 
 		// play button listener
 		this.btnPlay.addEventListener("click", () => {

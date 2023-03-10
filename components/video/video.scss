@@ -1,6 +1,7 @@
 
 
 .player {
+    --spacer-xxs: 4px;
     --spacer-xs: 8px;
     --spacer-sm: 12px;
     --spacer-md: 16px;
@@ -67,12 +68,21 @@
     flex: 0 0 100px;
     display: flex;
     align-items: center;
-    padding: 0 var(--spacer-md);
+    padding: 0 var(--spacer-md) 0 0;
     input {width: 100%;}
 }
-.player__progress, progress {
+.player__progress{
     flex: 0 0 100%;
     margin: 0;
+    position: relative;
+    > input {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .chapter {
+        
+    }
 }
 
 .player__play {
@@ -128,6 +138,30 @@
     &[value="true"]{
         .icon--collapse {display: block;}
         .icon--expand {display: none;}
+    }
+}
+.player__mute {
+    .icon--volume-high {
+        display: block;
+    }
+    .icon--volume-low, .icon--mute {
+        display: none;
+    }
+    &.low {
+        .icon--volume-low {
+            display: block;
+        }
+        .icon--volume-high, .icon--mute {
+            display: none;
+        }
+    }
+    &.muted {
+        .icon--volume-high,.icon--volume-low {
+            display: none;
+        }
+        .icon--mute {
+            display: block;
+        }
     }
 }
 
